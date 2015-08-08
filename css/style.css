@@ -1,0 +1,270 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+
+/* Box Model Hack */
+
+* {
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
+}
+
+/* Clear fix hack */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clear {
+  clear: both;
+}
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */
+}
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/* Center the container */
+
+#container {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+}
+.main-header {
+  height: 850px;
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134, 141, 157);
+  background-size: cover;
+}
+.quotes {
+  height: 250px;
+  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134, 141, 157);
+  background-size: cover;
+  padding-bottom: 40px;
+}
+/*.benefits .benefit {
+  float: left;
+  background: RGBA(239, 239, 239, 1);
+  border-right: 1px solid RGBA(81, 90, 102, 1);
+  width: 25%;
+  height: 100px;
+  padding: 150px;
+  background: #ffa949 url('http://placehold.it/350x150') no-repeat center;
+  background-size: cover;
+}*/
+
+.benefits {
+  display: flex;
+  justify-content: center;
+}
+
+.benefit  {
+  height: 250px;
+  width: 25%;
+  background: white url('http://placehold.it/450x250') no-repeat center;
+}
+
+.sign-up {
+  background: RGBA(249, 228, 62, 1);
+  height: 100px;
+}
+header {}
+footer {
+  background: RGBA(46, 46, 46, 1);
+  height: 200px;
+}
+.social {
+  /*float: left;*/
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.fuck {
+  height: 10px;
+  width: 30px;
+}
+
+.twitter  {
+
+}
+
+.facebook {
+
+}
+/******************************************
+/* BUTTON STYLES
+/*******************************************/
+
+
+/*.button1 {
+	background-color: RGBA(255, 194, 38, 1);
+	color:#fff;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:18px;
+	line-height:30px;
+	border-radius:20px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border:0;
+	text-shadow:#C17C3A 0 -1px 0;
+	width:120px;
+	height:32px;
+  margin-top: 40px;
+}*/
+
+.sign-up {
+  padding-top: 25px;
+}
+.button1 {
+  height: 40px;
+  width: 170px;
+  background: RGBA(249, 228, 62, 1);
+  margin: 0 auto;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 17px;
+  margin-top: 40px;
+  padding: 10px;
+}
+.button2 {
+  height: 40px;
+  width: 170px;
+  background: RGBA(42, 64, 83, 1);
+  margin: 0 auto;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 17px;
+  color: white;
+  padding: 10px;
+}
+
+/*button  {
+  margin: 0 auto;
+  display: table;
+}*/
+
+
+/*.button2 {
+  background-color: RGBA(42, 64, 83, 1);
+  color:#fff;
+  font-family:'Helvetica Neue',sans-serif;
+  font-size:18px;
+  line-height:30px;
+  border-radius:20px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  border:0;
+  text-shadow:#C17C3A 0 -1px 0;
+  width:120px;
+  height:32px;
+}*/
+
+
+/******************************************
+/* FONT STYLES
+/*******************************************/
+
+.title {
+  color: white;
+  padding-left: 20px;
+  font-size: 47px;
+  font-weight: bold;
+}
+.intro {
+  color: white;
+  font-size: 35px;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+}
+.benefits-summary {}
+.quotes {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  font-style: italic;
+  padding-top: 30px;
+}
+.quotes .quote-name {
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.bottom-title {
+  font-size: 30px;
+  font-weight: bolder;
+  color: RGBA(249, 228, 62, 1);
+  padding-top: 20px;
+}
+footer {
+  text-align: center;
+}
+.benefits {
+  font-size: 25px;
+  text-align: center;
+  color: gray;
+}
+.copy {
+  color: white;
+  padding-top: 30px;
+}
+
+.button2 a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.button2 a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.button1 a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.button1 a:visited {
+  text-decoration: none;
+  color: black;
+}
