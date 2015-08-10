@@ -1,0 +1,1 @@
+$(".intro").hide().show("slow");
