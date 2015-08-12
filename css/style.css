@@ -95,12 +95,14 @@ body {
 .benefits {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .benefit  {
   height: 250px;
   width: 25%;
   background: white url('http://placehold.it/450x250') no-repeat center;
+  flex-grow: 1;
 }
 
 .sign-up {
